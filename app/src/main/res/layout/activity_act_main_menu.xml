@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131414"
+    android:orientation="vertical"
+    tools:context=".Act_MainMenu">
+
+    <Button
+        android:id="@+id/btn_sidebar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/hamburger_ico"
+        app:iconPadding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_RawDataTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="Demographic Growth"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_populationDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Victoria de Durango"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="40dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/city_placeholder" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_Stadistics"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#E2DED5"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="changeStatistics"
+            android:text="Statistics"
+            android:textAlignment="viewStart"
+            android:textColor="#3D4DD9"
+            android:textSize="20sp"
+            android:typeface="serif"
+            app:cornerRadius="25dp"
+            app:icon="@drawable/stats_ico"
+            app:iconPadding="30dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/btn_Maps"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#7A6CF2"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="changeMaps"
+            android:text="Maps"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:typeface="serif"
+            app:cornerRadius="25dp"
+            app:icon="@drawable/location_ico"
+            app:iconPadding="30dp"
+            app:iconTintMode="multiply" />
+
+    </LinearLayout>
+
+</LinearLayout>
